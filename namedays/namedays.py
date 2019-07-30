@@ -87,8 +87,3 @@ def check_file():
     if not os.path.exists("data/namedays/namedays.json"):
         print('Downloading namedays.json...')
         urllib.request.urlretrieve("https://raw.githubusercontent.com/RichusX/richusx-cogs/master/namedays/namedays.json", "data/namedays/namedays.json")
-
-def setup(bot):
-    check_folder()
-    check_file()
-    bot.add_cog(Namedays(bot))
