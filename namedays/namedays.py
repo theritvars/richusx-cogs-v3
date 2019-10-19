@@ -41,7 +41,7 @@ class Namedays(BaseCog):
         """
 
         if msg is not None:
-            date_regex = re.match(r"^(0[1-9]|1[0-9]|2[0-9]|3[0-1])(\.|\/|\,)(0[1-9]|1[1-2])$", msg)
+            date_regex = re.match(r"^(0[1-9]|1[0-9]|2[0-9]|3[0-1])(\.|\/|\,)(0[1-9]|1[0-2])$", msg)
 
         if msg is None:
             day = datetime.datetime.now().strftime("%d")
