@@ -8,7 +8,7 @@ import discord
 BaseCog = getattr(commands, "Cog", object)
 
 class Depresija(BaseCog):
-    """Reply with today's name-days"""
+    """Cure grayman's depression"""
 
     def __init__(self, bot):
         self.bot = bot
