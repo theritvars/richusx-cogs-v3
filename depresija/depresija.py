@@ -21,7 +21,7 @@ class Depresija(BaseCog):
 
     @commands.Cog.listener()
     async def on_message(self, msg) -> None:
-        if msg.author.id == 225915965769121792:
+        if msg.author.id == 141242913958002688:
             if "depresija" in msg.content:
                 await msg.channel.send(content=f"{msg.author.mention} {self.emoji}")
 
