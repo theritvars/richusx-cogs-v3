@@ -1,9 +1,5 @@
-import json
-import os
-import re
 from redbot.core import commands
 import discord
-# import urllib.request
 
 BaseCog = getattr(commands, "Cog", object)
 
