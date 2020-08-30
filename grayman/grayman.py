@@ -3,8 +3,8 @@ import discord
 
 BaseCog = getattr(commands, "Cog", object)
 
-class Depresija(BaseCog):
-    """Cure grayman's depression"""
+class Grayman(BaseCog):
+    """Cure grayman's excessive emoji usage"""
 
     def __init__(self, bot):
         self.bot = bot
