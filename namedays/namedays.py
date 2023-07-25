@@ -8,8 +8,6 @@ import urllib.request
 emoji = ":champagne:"  # Iekļautie
 emoji2 = ":beers:"  # Neiekļautie
 
-BaseCog = getattr(commands, "Cog", object)
-
 def findByDate(vd, day, month):
         for i in vd["namedays"]:
             if i["month"] == month:
@@ -26,10 +24,11 @@ def findByName(vd, name):
             return date
     return False
 
-class Namedays(BaseCog):
+class Namedays(commands.Cog):
     """Reply with today's name-days"""
-
-    def __init__(self):
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
         self.data = json.loads(open("data/namedays/namedays.json", encoding='utf-8').read())
 
     @commands.command()

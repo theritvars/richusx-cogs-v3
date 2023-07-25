@@ -1,6 +1,6 @@
 from .namedays import Namedays, check_file, check_folder
 
-def setup(bot):
+async def setup(bot):
     check_folder()
     check_file()
-    bot.add_cog(Namedays())
+    await bot.add_cog(Namedays(bot))
